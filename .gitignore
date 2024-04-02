@@ -1,0 +1,9 @@
+# IDE-specific files
+.idea/
+.vscode/
+
+# ENV
+.env
+
+# Air
+tmp
