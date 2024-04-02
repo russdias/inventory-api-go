@@ -17,6 +17,36 @@ Go Inventory API is an open-source RESTful API designed for efficient inventory 
 - Listing out-of-stock and low-stock products.
 - CRUD operations for suppliers, categories, and products.
 
+## API Endpoints
+
+### Suppliers
+
+- **List all suppliers**: `GET /api/v1/suppliers`
+- **Create a new supplier**: `POST /api/v1/suppliers`
+- **Get a supplier by ID**: `GET /api/v1/suppliers/:id`
+- **Update a supplier by ID**: `PUT /api/v1/suppliers/:id`
+- **Delete a supplier by ID**: `DELETE /api/v1/suppliers/:id`
+- **Get products by supplier ID**: `GET /api/v1/suppliers/products/:supplierId`
+
+### Categories
+
+- **List all categories**: `GET /api/v1/categories`
+- **Create a new category**: `POST /api/v1/categories`
+- **Get a category by ID**: `GET /api/v1/categories/:id`
+- **Update a category by ID**: `PUT /api/v1/categories/:id`
+- **Delete a category by ID**: `DELETE /api/v1/categories/:id`
+
+### Products
+
+- **List all products**: `GET /api/v1/products`
+- **Create a new product**: `POST /api/v1/products`
+- **Get a product by ID**: `GET /api/v1/products/:id`
+- **Update a product by ID**: `PUT /api/v1/products/:id`
+- **Delete a product by ID**: `DELETE /api/v1/products/:id`
+- **Check stock for a product**: `GET /api/v1/suppliers/{supplierId}/products/{productId}/stock`
+- **List out-of-stock products**: `GET /api/v1/products/out-of-stock`
+- **List low-stock products**: `GET /api/v1/products/low-stock`
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine or in a Docker container for development and testing purposes.
